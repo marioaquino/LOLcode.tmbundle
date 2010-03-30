@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>lol</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~L</string>
+	<key>name</key>
+	<string>Lolcode</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(HAI|KTHXBYE|I HAS A|R|IM IN YR|IM OUTTA YR|TIL|WILE|PLZ|AWSUM THX|O RLY?|YA RLY|NO WAI|MEBBE|OIC|WTF?|OMG|OMGWTF|FOUND YR|GTFO)\b</string>
+			<key>name</key>
+			<string>keyword.control.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ITZ</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(BOTH SAEM|AN|DIFFRINT)</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(SUM OF|DIFF OF|PRODUKT OF|QUOSHUNT OF|MOD OF|BIGGR OF|SMALLR OF)</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(BOTH OF|EITHER OF|WON OF|NOT|ALL OF|ANY OF)</string>
+			<key>name</key>
+			<string>keyword.operator.logical.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(UPPIN|NERFIN)</string>
+			<key>name</key>
+			<string>keyword.operator.increment-decrement.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bMKAY\b</string>
+			<key>name</key>
+			<string>punctuation.terminator.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bWIN\b</string>
+			<key>name</key>
+			<string>constant.language.boolean.true.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bFAIL\b</string>
+			<key>name</key>
+			<string>constant.language.boolean.false.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(HOW DUZ I|YR|AN YR|IF U SAY SO)\b</string>
+			<key>name</key>
+			<string>storage.type.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(TROOF|YARN|NUMBR|NUMBAR|NOOB)\b</string>
+			<key>name</key>
+			<string>storage.type.primitive.lol</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.lol</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.lol</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.lol</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(BTW).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.btw.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(PLZ|O NOES|O WEL|KTHX|DO NOT WANT)\b</string>
+			<key>name</key>
+			<string>keyword.control.catch-exception.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|CAN HAS|IN MAH)\b</string>
+			<key>name</key>
+			<string>support.function.lol</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.lol</string>
+	<key>uuid</key>
+	<string>AD76A69E-D930-4B2E-834E-CE90B0EDC338</string>
+</dict>
+</plist>
