@@ -20,49 +20,43 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>ITZ</string>
+			<string>\b(ITZ)\b</string>
 			<key>name</key>
 			<string>keyword.operator.assignment.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(BOTH SAEM|AN|DIFFRINT)</string>
+			<string>\b(BOTH SAEM|AN|DIFFRINT)\b</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(SUM OF|DIFF OF|PRODUKT OF|QUOSHUNT OF|MOD OF|BIGGR OF|SMALLR OF|IN MAH)</string>
+			<string>\b(SUM OF|DIFF OF|PRODUKT OF|QUOSHUNT OF|MOD OF|BIGGR OF|SMALLR OF|IN MAH)\b</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(BOTH OF|EITHER OF|WON OF|NOT|ALL OF|ANY OF)</string>
+			<string>\b(BOTH OF|EITHER OF|WON OF|NOT|ALL OF|ANY OF)\b</string>
 			<key>name</key>
 			<string>keyword.operator.logical.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(UPPIN|NERFIN)</string>
+			<string>\b(UPPIN|NERFIN)\b</string>
 			<key>name</key>
 			<string>keyword.operator.increment-decrement.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bMKAY\b</string>
-			<key>name</key>
-			<string>punctuation.terminator.lol</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\bWIN\b</string>
+			<string>\b(WIN)\b</string>
 			<key>name</key>
 			<string>constant.language.boolean.true.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bFAIL\b</string>
+			<string>\b(FAIL)\b</string>
 			<key>name</key>
 			<string>constant.language.boolean.false.lol</string>
 		</dict>
@@ -116,6 +110,22 @@
 			<string>comment.line.btw.lol</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\b(OBTW)\b</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.lol</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(TLDR)\n?</string>
+			<key>name</key>
+			<string>comment.block.lol</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(PLZ|O NOES|O WEL|KTHX|DO NOT WANT)\b</string>
 			<key>name</key>
@@ -123,7 +133,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|CAN HAS)\b</string>
+			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|MKAY|CAN HAS)\b</string>
 			<key>name</key>
 			<string>support.function.lol</string>
 		</dict>
