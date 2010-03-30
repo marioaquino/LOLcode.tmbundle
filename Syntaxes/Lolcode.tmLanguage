@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(SUM OF|DIFF OF|PRODUKT OF|QUOSHUNT OF|MOD OF|BIGGR OF|SMALLR OF)</string>
+			<string>(SUM OF|DIFF OF|PRODUKT OF|QUOSHUNT OF|MOD OF|BIGGR OF|SMALLR OF|IN MAH)</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic.lol</string>
 		</dict>
@@ -79,6 +79,12 @@
 			<string>storage.type.primitive.lol</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(PLZ|O NOES|O WEL|RTFM)\b</string>
+			<key>name</key>
+			<string>keyword.control.catch-exception.lol</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>"</string>
 			<key>end</key>
@@ -117,7 +123,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|CAN HAS|IN MAH)\b</string>
+			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|CAN HAS)\b</string>
 			<key>name</key>
 			<string>support.function.lol</string>
 		</dict>
