@@ -9,9 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>(OIC|IF U SAY SO|GTFO)\b</string>
+		<string>(KTHXBYE|KTHX|OIC|IF U SAY SO|GTFO)\b</string>
 		<key>increaseIndentPattern</key>
-		<string>(WTF?|O RLY?|HOW DUZ I|OMGWTF)</string>
+		<string>(HAI|WTF?|O RLY?|HOW DUZ I|OMGWTF)</string>
 	</dict>
 	<key>uuid</key>
 	<string>3C3551B3-6B7A-445A-9E6B-8F86E69EC3C3</string>
