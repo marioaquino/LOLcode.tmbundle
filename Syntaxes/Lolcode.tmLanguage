@@ -35,16 +35,21 @@
 					<key>name</key>
 					<string>variable.parameter.function.lol</string>
 				</dict>
-				<key>5</key>
+				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.end.lol</string>
+					<string>punctuation.definition.parameters.begin.lol</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.lol</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>match stuff like: HOW DUZ I &lt;function name&gt; [YR &lt;argument1&gt; [AN YR &lt;argument2&gt; ...]]</string>
 			<key>match</key>
-			<string>(HOW DUZ I)\s([a-zA-Z][\w]*)\s(YR)\s(\w*)(\n)</string>
+			<string>(HOW DUZ I)\s([a-zA-Z][\w]*)\s(YR)\s(\w*)(\s(AN YR)\s(\w*))*</string>
 			<key>name</key>
 			<string>meta.function.lol</string>
 		</dict>
