@@ -4,12 +4,14 @@
 <dict>
 	<key>name</key>
 	<string>Indent</string>
+	<key>scope</key>
+	<string>source.lol</string>
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^\s*((OIC|IF U SAY SO|GTFO)\b)</string>
+		<string>(OIC|IF U SAY SO|GTFO)\b</string>
 		<key>increaseIndentPattern</key>
-		<string>^\s*((WTF?|O RLY?|HOW DUZ I|OMGWTF)\b)$</string>
+		<string>(WTF?|O RLY?|HOW DUZ I|OMGWTF)</string>
 	</dict>
 	<key>uuid</key>
 	<string>3C3551B3-6B7A-445A-9E6B-8F86E69EC3C3</string>

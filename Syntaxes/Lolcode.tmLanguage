@@ -13,8 +13,52 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.lol</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.lol</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.lol</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.lol</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.lol</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: HOW DUZ I &lt;function name&gt; [YR &lt;argument1&gt; [AN YR &lt;argument2&gt; ...]]</string>
 			<key>match</key>
-			<string>\b(HAI|KTHXBYE|I HAS A|R|IM IN YR|IM OUTTA YR|TIL|WILE|PLZ|AWSUM THX|O RLY?|YA RLY|NO WAI|MEBBE|OIC|WTF?|OMG|OMGWTF|FOUND YR|GTFO)\b</string>
+			<string>(HOW DUZ I)\s([a-zA-Z][\w]*)\s(YR)\s(\w*)(\n)</string>
+			<key>name</key>
+			<string>meta.function.lol</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>closing a function</string>
+			<key>match</key>
+			<string>(IF U SAY SO)</string>
+			<key>name</key>
+			<string>storage.type.function.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(HAI|KTHXBYE|I HAS A|R|IM IN YR|IM OUTTA YR|TIL|WILE|PLZ|AWSUM THX|O RLY?|YA RLY|NO WAI|MEBBE|OIC|WTF?|OMG|OMGWTF|FOUND YR|GTFO|AN YR)\b</string>
 			<key>name</key>
 			<string>keyword.control.lol</string>
 		</dict>
@@ -62,15 +106,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(HOW DUZ I|YR|AN YR|IF U SAY SO)\b</string>
+			<string>\b(YARN|NUMBR|NUMBAR|TROOF|BUKKIT|NOOB)\b</string>
 			<key>name</key>
 			<string>storage.type.lol</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(TROOF|YARN|NUMBR|NUMBAR|NOOB)\b</string>
-			<key>name</key>
-			<string>storage.type.primitive.lol</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -136,6 +174,12 @@
 			<string>\b(VISIBLE|BYES|DIAF|GIMMEH|SMOOSH|MKAY|CAN HAS)\b</string>
 			<key>name</key>
 			<string>support.function.lol</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(IT)\b</string>
+			<key>name</key>
+			<string>variable.language.lol</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
